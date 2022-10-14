@@ -25,7 +25,7 @@
     border-top-left-radius: 10px;
     background-position: center;
     border-bottom-left-radius: 10px;
-    background-image: url(/images/Desktop.jpg);
+    background-image: url(./images/Desktop.jpg);
     background-size: cover;
 }
 .buy{
@@ -100,7 +100,7 @@
         height: 90%;
     }
     .img{
-        background-image: url(/images/mobile.jpg);
+        background-image: url(./images/mobile.jpg);
         border-top-right-radius: 10px;
         border-bottom-left-radius:0px;
         height: 40%;
