@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color:hsl(30, 38%, 92%);
+}
+.container .card{
+    display: flex;
+    width: 650px;
+    height: 550px;
+    background-color: white;
+    border-radius: 10px;
+}
+.container .img ,.container .buy{
+    width: 50%;
+}
+.img{
+    border-top-left-radius: 10px;
+    background-position: center;
+    border-bottom-left-radius: 10px;
+    background-image: url(/images/Desktop.jpg);
+    background-size: cover;
+}
+.buy{
+    padding: 60px 40px;
+}
+.buy h2{
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.buy h1{
+    font-size: 37px;
+    font-family:'Fraunces', sans-serif;
+    text-transform: capitalize;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.buy p{
+    line-height: 1.7;
+    color:hsl(228, 12%, 48%) ;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+.price{
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.price span{
+    margin-left: 20px;
+    font-size: 17px;
+    color:hsl(228, 12%, 48%) ;
+    text-decoration:line-through;
+}
+.button{
+    font-size: 15px;
+    font-weight: bold;
+    font-family:'Montserrat', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    background-color:hsl(158, 36%, 44%) ;
+    cursor:pointer;
+    transition: 1s ease;
+}
+.button img{
+    margin-right: 10px;
+}
+.button:hover{
+    background-color: hsl(158, 36%, 32%);
+}
+@media (max-width: 571px){
+    .container .card{
+        flex-direction:column;
+        width: 90%;
+        height: 90%;
+    }
+    .img{
+        background-image: url(/images/mobile.jpg);
+        border-top-right-radius: 10px;
+        border-bottom-left-radius:0px;
+        height: 40%;
+    }
+    .buy{
+        height: 60%;
+        padding: 20px;
+    }
+    .container .card .img , .container .card .buy{
+        width: 100%;
+    }
+    .price{
+        margin-bottom: 30px;
+    }
+    .buy p{
+        line-height: normal;
+    }
+}
+@media (max-width: 375px){
+.price{
+    margin-bottom: 10px;
+}
+.buy p{
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.buy h1{
+    font-size: 30px;
+}
+}
